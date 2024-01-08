@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<title>William Clayton | Full Stack Web Developer</title>
 	<link rel="icon" type="image/x-icon" href="images/w.ico">
+	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 <div class="page-wrapper">
@@ -11,7 +12,7 @@
 	<!--header containing navbar and introduction-->
 	<header>
 		
-		<nav>
+		<nav id="navbar">
 			<a href="#">Home</a>
 			<a href="#">About</a>
 			<a href="#">Projects</a>
@@ -26,14 +27,16 @@
 	
 	<!--main containing about me and project section-->
 	<main class="container">
-		<div class="row full-width">
+		<div class="row">
 			
 			<!--About Section-->
-			<section class="column">
+			<section class="column about">
 				<h2>About</h2>
 				
-				<img src="https://placehold.co/100" alt="William Clayton photo">
-				<p>An Army vet turned software developer. My military background brings discipline, teamwork, and a drive for excellence to my coding journey. I've taken on challenges with determination, and I'm excited to learn everything there is about coding while deliver high value solutions.</p>
+				<div>
+					<img src="https://placehold.co/100" alt="William Clayton photo">
+					<p>An Army vet turned software developer. My military background brings discipline, teamwork, and a drive for excellence to my coding journey. I've taken on challenges with determination, and I'm excited to learn everything there is about coding while deliver high value solutions.</p>
+				</div>
 				
 				<div>
 					<!--skills list-->
@@ -42,7 +45,7 @@
 			</section>
 			
 			<!--Project Section-->
-			<section class="column">
+			<section class="column projects">
 				<h2>Projects</h2>
 				
 				<div>
@@ -72,18 +75,18 @@
 			</section>
 			
 			<!--Contact Section-->
-			<section class="column">
+			<section class="column contact">
 				<h2>Contact</h2>
 				
 				<form>
 					<label for="user-name">
-						<input type="text" id="user-name" />
+						<input type="text" id="user-name" placeholder="Name" />
 					</label>
 					<label for="user-email">
-						<input type="text" id="user-email" />
+						<input type="text" id="user-email" placeholder="Email" />
 					</label>
 					<label for="user-message">
-						<textarea id="user-message"></textarea>
+						<textarea id="user-message" placeholder="Message"></textarea>
 					</label>
 					<input type="submit">
 				</form>
@@ -95,9 +98,11 @@
 	
 	<!--footer containing contact information-->
 	<footer>
-		<a href="#">LinkedIn</a>
-		<a href="#">GitHub</a>
-		<a href="#">Gmail</a>
+		<div id="footer-links">
+			<a href="#">LinkedIn</a>
+			<a href="#">GitHub</a>
+			<a href="#">Gmail</a>
+		</div>
 		
 		<p>WILLIAM CLAYTON 	&#169;2024</p>
 	</footer>
