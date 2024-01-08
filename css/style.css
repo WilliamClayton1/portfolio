@@ -1,3 +1,6 @@
+@import "resets.css";
+@import "layout.css";
+
 #navbar {
     display: flex;
     justify-content: center;
@@ -17,6 +20,18 @@ nav a:hover {
 
 nav a:visited {
     color: black;
+}
+
+
+.sections {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+section {
+    width: 100%;
+    border: 1px solid black;
 }
 
 .intro {
@@ -44,6 +59,7 @@ nav a:visited {
     position: relative;
     font-size: 24px;
     margin-top: 20px;
+    background-color: white;
 }
 
 #view-work-btn:hover {
@@ -74,11 +90,28 @@ nav a:visited {
     opacity: 0;
 }
 
-.about {
+h1 {
+    font-size: 55px;
+    margin-top: 90px;
+    margin-bottom: 90px;
+}
+
+section.about {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 50px;
+}
+
+.about-container {
+    display: flex;
+    gap: 50px;
+}
+
+#bio {
+    width: 500px;
+    font-size: 18px;
 }
 
 .projects {
@@ -86,6 +119,7 @@ nav a:visited {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 50px;
 }
 
 .contact {
@@ -93,6 +127,7 @@ nav a:visited {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 50px;
 }
 
 form {

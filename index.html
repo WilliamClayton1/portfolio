@@ -15,7 +15,7 @@
 		<div class="container intro">
 			<p>Hello, I'm <strong>William</strong>.</p>
 			<p>I'm a full stack web developer.</p>
-			<button id="view-work-btn" type="button">View My Work</button>
+			<a id="view-work-btn" type="button" href="#navbar">View My Work</a>
 		</div>
 		
 		<nav id="navbar">
@@ -29,30 +29,39 @@
 	
 	<!--main containing about me and project section-->
 	<main class="container">
-		<div class="row">
+		
+		<div class="sections">
 			
 			<!--About Section-->
 			<section class="column about">
-				<h2 id="about-header">About</h2>
+				<h1 id="about-header">About</h1>
 				
-				<div>
-					<img src="https://placehold.co/100" alt="William Clayton photo">
-					<p>An Army vet turned software developer. My military background brings discipline, teamwork, and a drive for excellence to my coding journey. I've taken on challenges with determination, and I'm excited to learn everything there is about coding while deliver high value solutions.</p>
-				</div>
-				
-				<div>
-					<!--skills list-->
+				<div class="about-container">
+					<div>
+						<img src="https://placehold.co/200" alt="William Clayton photo">
+						<p id="bio">An Army vet turned software developer. My military background brings discipline, teamwork, and a drive for excellence to my coding journey. I've taken on challenges with determination, and I'm excited to learn everything there is about coding while deliver high value solutions.</p>
+					</div>
+					
+					<div id="skill-list">
+						<!--skills list-->
+						<img src="https://placehold.co/50" alt="skill">
+						<img src="https://placehold.co/50" alt="skill">
+						<img src="https://placehold.co/50" alt="skill">
+						<img src="https://placehold.co/50" alt="skill">
+						<img src="https://placehold.co/50" alt="skill">
+						<img src="https://placehold.co/50" alt="skill">
+					</div>
 				</div>
 				
 			</section>
 			
 			<!--Project Section-->
 			<section class="column projects">
-				<h2 id="projects-header">Projects</h2>
+				<h1 id="projects-header">Projects</h1>
 				
 				<div>
 					<h3>Project Title</h3>
-					<img src="https://placehold.co/700x400" alt="Project Photo">
+					<img src="https://placehold.co/1000x700" alt="Project Photo">
 					<p>Project description</p>
 					<a href="#">Live Site</a>
 					<a href="#">Repository</a>
@@ -60,7 +69,7 @@
 				
 				<div>
 					<h3>Project Title</h3>
-					<img src="https://placehold.co/700x400" alt="Project Photo">
+					<img src="https://placehold.co/1000x700" alt="Project Photo">
 					<p>Project description</p>
 					<a href="#">Live Site</a>
 					<a href="#">Repository</a>
@@ -68,7 +77,7 @@
 				
 				<div>
 					<h3>Project Title</h3>
-					<img src="https://placehold.co/700x400" alt="Project Photo">
+					<img src="https://placehold.co/1000x700" alt="Project Photo">
 					<p>Project description</p>
 					<a href="#">Live Site</a>
 					<a href="#">Repository</a>
@@ -78,7 +87,7 @@
 			
 			<!--Contact Section-->
 			<section class="column contact">
-				<h2 id="contact-header">Contact</h2>
+				<h1 id="contact-header">Contact</h1>
 				
 				<form>
 					<label for="user-name">
@@ -93,7 +102,6 @@
 					<input type="submit">
 				</form>
 			</section>
-			
 		</div>
 		
 	</main>
