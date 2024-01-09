@@ -17,17 +17,13 @@
 
 nav a {
     font-size: 20px;
-    text-decoration: none;
+    text-underline: none;
+    color: black
 }
 
 nav a:hover {
-    color: red;
+    color: white;
 }
-
-nav a:visited {
-    color: black;
-}
-
 
 .sections {
     display: flex;
@@ -112,18 +108,22 @@ section.about {
 
 .about-container {
     display: flex;
-    gap: 300px;
+    gap: 400px;
 }
 
 .bio-div {
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    align-items: center;
+    gap: 40px;
+}
 
+.picture {
+    width: 200px;
 }
 
 #bio {
-    width: 500px;
+    width: 450px;
     font-size: 18px;
 }
 
