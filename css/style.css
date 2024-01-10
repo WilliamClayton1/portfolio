@@ -97,6 +97,7 @@ h1 {
     padding-bottom: 90px;
 }
 
+
 section.about {
     display: flex;
     flex-direction: column;
@@ -128,10 +129,11 @@ section.about {
 }
 
 #skill-list {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    max-width: 400px;
+    width: 400px;
+}
+
+.skills {
+    width: 100px;
 }
 
 .projects {
@@ -142,12 +144,25 @@ section.about {
     padding: 50px;
 }
 
+.project-title {
+    font-size: 35px;
+}
+
 .contact {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 50px;
+}
+
+#contact-header {
+    padding-bottom: 0;
+}
+
+.contact p {
+    padding: 20px 0 30px 0;
+    width: 500px;
 }
 
 form {
@@ -176,4 +191,68 @@ footer {
 
 html {
     scroll-behavior: smooth;
+}
+
+form {
+
+    display: flex;
+    gap: 5px;
+
+}
+
+input {
+    width: 500px;
+    height: 40px;
+    padding: 10px;
+}
+
+textarea {
+    width: 500px;
+    height: 120px;
+    padding: 10px;
+}
+
+#contact-btn {
+    align-self: end;
+    --color: black;
+    font-family: inherit;
+    display: inline-block;
+    width: 6em;
+    height: 2.6em;
+    line-height: 2.5em;
+    overflow: hidden;
+    cursor: pointer;
+    margin: 20px;
+    font-size: 17px;
+    z-index: 1;
+    color: var(--color);
+    border: 1px solid var(--color);
+    border-radius: 6px;
+    position: relative;
+    background-color: white;
+}
+
+button::before {
+    position: absolute;
+    content: "";
+    background: var(--color);
+    width: 150px;
+    height: 200px;
+    z-index: -1;
+    border-radius: 50%;
+}
+
+#contact-btn:hover {
+    color: white;
+}
+
+button:before {
+    top: 100%;
+    left: 100%;
+    transition: 0.3s all;
+}
+
+button:hover::before {
+    top: -30px;
+    left: -30px;
 }
