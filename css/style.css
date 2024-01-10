@@ -144,6 +144,16 @@ section.about {
     padding: 50px;
 }
 
+#projects-header {
+    padding-bottom: 150px;
+}
+
+.projects-list {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
 .project-title {
     font-size: 35px;
 }
@@ -179,6 +189,14 @@ footer {
     padding: 15px;
 }
 
+footer p {
+    font-size: 10px;
+}
+
+#footer-links {
+    display: flex;
+}
+
 .sticky {
     position: fixed;
     top: 0;
@@ -194,10 +212,8 @@ html {
 }
 
 form {
-
     display: flex;
     gap: 5px;
-
 }
 
 input {
