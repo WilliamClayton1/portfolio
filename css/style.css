@@ -12,17 +12,34 @@
     justify-content: center;
     gap: 10px;
     padding: 15px;
-    background-color: lightgrey;
-}
+    background-color: black;
 
-nav a {
-    font-size: 20px;
-    text-underline: none;
-    color: black
-}
+    & a {
+        color: #fff;
+        text-transform: uppercase;
+        text-decoration: none;
+        letter-spacing: 0.15em;
+        display: inline-block;
+        padding: 15px 20px;
+        position: relative;
+    }
 
-nav a:hover {
-    color: white;
+    & a:after {
+        bottom: 0;
+        content: "";
+        display: block;
+        height: 2px;
+        left: 50%;
+        position: absolute;
+        background: #fff;
+        transition: width 0.3s ease 0s, left 0.3s ease 0s;
+        width: 0;
+    }
+
+    & a:hover:after {
+        width: 100%;
+        left: 0;
+    }
 }
 
 .sections {
@@ -176,51 +193,25 @@ section.about {
     gap: 10px;
 
     & a {
-        text-align: center;
-        align-self: end;
-        --color: black;
-        font-family: inherit;
         display: inline-block;
-        width: 6em;
-        height: 2.6em;
-        line-height: 2.5em;
-        overflow: hidden;
-        cursor: pointer;
-        margin: 20px;
-        font-size: 17px;
-        z-index: 1;
-        color: var(--color);
-        border: 1px solid var(--color);
-        border-radius: 6px;
-        position: relative;
-        background-color: white;
-    }
-
-    & a::before {
-        position: absolute;
-        content: "";
-        background: var(--color);
-        width: 150px;
-        height: 200px;
-        z-index: -1;
-        border-radius: 50%;
+        padding: 0.5em 1.7em;
+        margin: 0 0.1em 0.1em 0;
+        border: 2px solid black;
+        border-radius: 2em;
+        box-sizing: border-box;
+        text-decoration: none;
+        font-family: "Open Sans", sans-serif;
+        font-weight: 500;
+        color: black;
+        text-shadow: 0 0.04em 0.04em rgba(255, 255, 255, 0.253);
+        text-align: center;
+        transition: all 0.2s;
     }
 
     & a:hover {
         color: white;
+        background-color: black;
     }
-
-    & a:before {
-        top: 100%;
-        left: 100%;
-        transition: 0.3s all;
-    }
-
-    & a:hover::before {
-        top: -30px;
-        left: -30px;
-    }
-
 }
 
 .contact {
@@ -250,8 +241,9 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: lightgrey;
+    background-color: black;
     padding: 15px;
+    color: white;
 }
 
 footer p {
@@ -295,45 +287,23 @@ textarea {
 
 #contact-btn {
     align-self: end;
-    --color: black;
-    font-family: inherit;
-    display: inline-block;
-    width: 6em;
-    height: 2.6em;
-    line-height: 2.5em;
-    overflow: hidden;
-    cursor: pointer;
-    margin: 20px;
-    font-size: 17px;
-    z-index: 1;
-    color: var(--color);
-    border: 1px solid var(--color);
-    border-radius: 6px;
-    position: relative;
+    padding: 0.5em 1.7em;
+    margin: 0 0.1em 0.1em 0;
+    border: 2px solid black;
+    border-radius: 2em;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 500;
+    color: black;
+    text-shadow: 0 0.04em 0.04em rgba(255, 255, 255, 0.253);
+    text-align: center;
+    transition: all 0.2s;
     background-color: white;
+
+    &:hover {
+        color: white;
+        background-color: black;
+    }
 }
 
-button::before {
-    position: absolute;
-    content: "";
-    background: var(--color);
-    width: 150px;
-    height: 200px;
-    z-index: -1;
-    border-radius: 50%;
-}
-
-#contact-btn:hover {
-    color: white;
-}
-
-button:before {
-    top: 100%;
-    left: 100%;
-    transition: 0.3s all;
-}
-
-button:hover::before {
-    top: -30px;
-    left: -30px;
-}
