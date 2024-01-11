@@ -1,11 +1,16 @@
 @import "resets.css";
 @import "layout.css";
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 /*TODO:
    1. Style each section
    2. find projects to input
    3. Find better transition for links
    */
+
+body {
+    font-family: "Rubik", sans-serif;
+}
 
 #navbar {
     display: flex;
@@ -220,6 +225,10 @@ section.about {
     justify-content: center;
     align-items: center;
     padding: 50px;
+
+    & p {
+        font-size: 18px;
+    }
 }
 
 #contact-header {
@@ -277,12 +286,16 @@ input {
     width: 500px;
     height: 40px;
     padding: 10px;
+    font-family: "Rubik", sans-serif;
+    font-size: 18px;
 }
 
 textarea {
     width: 500px;
     height: 120px;
     padding: 10px;
+    font-family: "Rubik", sans-serif;
+    font-size: 18px;
 }
 
 #contact-btn {
