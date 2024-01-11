@@ -154,8 +154,73 @@ section.about {
     gap: 100px;
 }
 
+.project-photo {
+    max-width: 900px;
+}
+
 .project-title {
     font-size: 35px;
+    text-align: center;
+}
+
+.project-details {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+.project-links {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+
+    & a {
+        text-align: center;
+        align-self: end;
+        --color: black;
+        font-family: inherit;
+        display: inline-block;
+        width: 6em;
+        height: 2.6em;
+        line-height: 2.5em;
+        overflow: hidden;
+        cursor: pointer;
+        margin: 20px;
+        font-size: 17px;
+        z-index: 1;
+        color: var(--color);
+        border: 1px solid var(--color);
+        border-radius: 6px;
+        position: relative;
+        background-color: white;
+    }
+
+    & a::before {
+        position: absolute;
+        content: "";
+        background: var(--color);
+        width: 150px;
+        height: 200px;
+        z-index: -1;
+        border-radius: 50%;
+    }
+
+    & a:hover {
+        color: white;
+    }
+
+    & a:before {
+        top: 100%;
+        left: 100%;
+        transition: 0.3s all;
+    }
+
+    & a:hover::before {
+        top: -30px;
+        left: -30px;
+    }
+
 }
 
 .contact {
